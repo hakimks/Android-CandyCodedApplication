@@ -24,6 +24,9 @@ import com.loopj.android.http.TextHttpResponseHandler;
 
 import cz.msebera.android.httpclient.Header;
 
+import static com.pluralsight.candycoded.DetailActivity.HASHTAG_CANDYCODED;
+import static com.pluralsight.candycoded.DetailActivity.SHARE_DESCRIPTION;
+
 
 public class MainActivity extends AppCompatActivity {
     private Candy[] candies;
@@ -94,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
 
     }
+
 
     private void addCandiesToDatabase(Candy[] candies) {
         SQLiteDatabase db = candyDbHelper.getWritableDatabase();
